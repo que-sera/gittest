@@ -1,0 +1,5 @@
+it is test to know how to solve conflict.
+after commit in local without push, this file is updated and pushed in remote repository.
+after push in remote repository and updating in local, it is pushed in local and supposed conflict happened
+ 
+
