@@ -3,4 +3,4 @@ after commit in local without push, this file is updated and pushed in remote re
 after push in remote repository and updating in local, it is pushed in local and supposed conflict happened
  
 
-add 123
+add 123,,6789,ABC
