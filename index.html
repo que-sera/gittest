@@ -6,14 +6,16 @@
     </head>
     <body>
 <!-- 
-table
-thead
-tbody
-tr: table row
-th: table header
-td: table date
+form
+  action: どこに送るか？
+  method: get / post
+input
 --> 
         <article>
+        <h1>アンケート</h1>
+        <form action="survey.php" method="post">
+            <p>メールアドレス: <input type="text" name="email"></p>
+            <p><input type="submit" value="送信！"></p></form>
         <h1>おいしいごはん</h1>
         <p><img arc="dot.png" width="150" height="150" alt="カオマンガイ"></p>
         <table>
