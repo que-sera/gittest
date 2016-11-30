@@ -6,12 +6,14 @@
     </head>
     <body>
 <!-- 
-input
-    email
-    number
-    date
+数値文字参照
+文字実体参照
 --> 
      <article>
+        <h1>文字参照</h1>
+         <p>「&lt;p&gt;タグを段落です」</p>
+         <input type="text" value="区切り文字は&quot;です">
+         <p>「この記号の文字参照は&amp;quot;です」</p>
         <h1>アンケート</h1>
         <form action="survey.php" method="post" novalidate>
             <p>メールアドレス: <input type="email" name="email" required></p>
