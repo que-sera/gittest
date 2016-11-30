@@ -6,33 +6,17 @@
     </head>
     <body>
 <!-- 
-select
-option
+input
+    email
+    number
+    date
 --> 
      <article>
         <h1>アンケート</h1>
-        <form action="survey.php" method="post">
-            <p>メールアドレス: <input type="text" name="email" disabled></p>
-            <!--
-            <p>City:
-                <select name="city">
-                    <option value="tokyo">Tokyo</option>
-                    <option value="nagoya">Nagoya</option>
-                    <option value="osaka" selected>Osaka</option>
-                    <option value="kyoto">Kyoto</option>
-                    <option value="fukuoka">Fukuoka</option>
-                </select>
-            </p>
-            -->
-            <p>City:
-                <select name="city" multiple size="5">
-                    <option value="tokyo">Tokyo</option>
-                    <option value="nagoya">Nagoya</option>
-                    <option value="osaka" selected>Osaka</option>
-                    <option value="kyoto">Kyoto</option>
-                    <option value="fukuoka">Fukuoka</option>
-                </select>
-            </p>
+        <form action="survey.php" method="post" novalidate>
+            <p>メールアドレス: <input type="email" name="email" required></p>
+            <p>料金: <input type="number" name="price"></p>
+            <p>誕生日: <input type="date" name="birthday"></p>
             <p><input type="submit" value="送信!"></p>
         </form>
         <h1>おいしいごはん</h1>
