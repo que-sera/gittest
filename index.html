@@ -6,36 +6,34 @@
     </head>
     <body>
 <!-- 
-input
-    checkbox
-    radio
-label
+select
+option
 --> 
      <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
             <p>メールアドレス: <input type="text" name="email" disabled></p>
-            <p>
-                Phone:
-                <label><input type="checkbox" name="phone" value="andoroid" checked>Andoroid</label>
-                <input type="checkbox" name="phone" value="iPhone" id="iPhone"><label for ="iPhone">iPhone</label>
+            <!--
+            <p>City:
+                <select name="city">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka" selected>Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
             </p>
-            <p>
-                Color:
-                <input type="radio" name="color" value="red" checked>Red
-                <input type="radio" name="color" value="blue" >Blue
+            -->
+            <p>City:
+                <select name="city" multiple size="5">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka" selected>Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
             </p>
-            <p>
-                コメント: 
-                <textarea name="comment" cols="40" rows="5">コメント</textarea>
-            </p>
-            <p>
-                <button type="submit"><strong>送信</strong></button>
-            </p>
-            <p>
-                <button type="button">処理をする！</button>
-            </p>
-            <p><input type="submit" value="送信!" disabled></p>
+            <p><input type="submit" value="送信!"></p>
         </form>
         <h1>おいしいごはん</h1>
         <p><img arc="dot.png" width="150" height="150" alt="カオマンガイ"></p>
